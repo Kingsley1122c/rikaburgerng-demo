@@ -11,10 +11,52 @@ import AdminRoute from './components/common/AdminRoute';
 import { AdminLoginPage } from './routes/lazyPages';
 import { useScrollToTop } from './hooks/useScrollToTop';
 
+const pageTitles = [
+  ['/', 'Home'],
+  ['/menu', 'Menu'],
+  ['/gallery', 'Gallery'],
+  ['/about', 'About'],
+  ['/contact', 'Contact'],
+  ['/cart', 'Cart'],
+  ['/checkout', 'Checkout'],
+  ['/order-tracking', 'Order Tracking'],
+  ['/wishlist', 'Wishlist'],
+  ['/account', 'My Account'],
+  ['/notifications', 'Notifications'],
+  ['/settings', 'Settings'],
+  ['/login', 'Customer Login'],
+  ['/register', 'Create Account'],
+  ['/forgot-password', 'Forgot Password'],
+  ['/reset-password', 'Reset Password'],
+  ['/unauthorized', 'Unauthorized'],
+  ['/faq', 'FAQ'],
+  ['/privacy-policy', 'Privacy Policy'],
+  ['/terms-of-service', 'Terms of Service'],
+  ['/admin/login', 'Admin Login'],
+  ['/admin/dashboard', 'Admin Dashboard'],
+  ['/admin/orders', 'Admin Orders'],
+  ['/admin/menu', 'Admin Menu'],
+  ['/admin/categories', 'Admin Categories'],
+  ['/admin/customers', 'Admin Customers'],
+  ['/admin/reviews', 'Admin Reviews'],
+  ['/admin/inventory', 'Admin Inventory'],
+  ['/admin/coupons', 'Admin Coupons'],
+  ['/admin/analytics', 'Admin Analytics'],
+  ['/admin/messages', 'Admin Messages'],
+  ['/admin/staff', 'Admin Staff'],
+  ['/admin/settings', 'Admin Settings'],
+];
+
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
   useScrollToTop();
+
+  React.useEffect(() => {
+    const path = location.pathname.replace(/\/+$/, '') || '/';
+    const match = pageTitles.find(([route]) => route === path);
+    document.title = match ? `RikaburgerNG | ${match[1]}` : 'RikaburgerNG';
+  }, [location.pathname]);
 
   React.useEffect(() => {
     const params = new URLSearchParams(location.search);

@@ -289,7 +289,7 @@ const HomePage = () => {
             <Reveal>
               <div className="location-card">
                 <h3>Main Branch</h3>
-                <p>123 Burger Lane, Lagos, Nigeria</p>
+                <p>Placeholder address to be replaced by the client</p>
                 <p>Open daily: 10:00 AM - 11:00 PM</p>
                 <div className="section-actions">
                   <Button as={Link} to={ROUTES.CONTACT}>Get Directions</Button>

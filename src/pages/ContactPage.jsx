@@ -35,9 +35,9 @@ const ContactPage = () => {
               <motion.aside className="contact-info-card" whileHover={{ y: -3 }}>
                 <h2>Contact Details</h2>
                 <div className="contact-rows">
-                  <p><strong>Email:</strong> contact@rikaburgerng.com</p>
-                  <p><strong>Phone:</strong> +234 123 456 7890</p>
-                  <p><strong>Address:</strong> 123 Burger Lane, Lagos, Nigeria</p>
+                  <p><strong>Email:</strong> hello@rikaburgerng.com</p>
+                  <p><strong>Phone:</strong> +234 800 000 0000</p>
+                  <p><strong>Address:</strong> Placeholder address to be replaced by the client</p>
                 </div>
 
                 <h3>Business Hours</h3>
@@ -67,7 +67,7 @@ const ContactPage = () => {
                 <div className="social-row" aria-label="Social media links">
                   <a href="https://facebook.com/rikaburgerng" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebook /></a>
                   <a href="https://instagram.com/rikaburgerng" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
-                  <a href="https://twitter.com/rikaburgerng" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
+                  <a href="https://x.com/rikaburgerng" target="_blank" rel="noopener noreferrer" aria-label="X"><FaTwitter /></a>
                 </div>
               </motion.aside>
             </Reveal>

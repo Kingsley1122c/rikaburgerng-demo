@@ -11,7 +11,7 @@ const Footer = () => {
       <Container className="footer-container">
         <div className="footer-section about">
           <h3 className="footer-logo">RikaburgerNG</h3>
-          <p>The best burgers in Nigeria. Made with love, served with a smile.</p>
+          <p>Premium burgers, combos, and delivery for your next meal in Lagos.</p>
         </div>
         <div className="footer-section links">
           <h4>Quick Links</h4>
@@ -25,16 +25,16 @@ const Footer = () => {
         </div>
         <div className="footer-section contact">
           <h4>Contact Us</h4>
-          <p>123 Burger Lane, Lagos, Nigeria</p>
-          <p>contact@rikaburgerng.com</p>
-          <p>+234 123 456 7890</p>
+          <p>Placeholder address to be replaced by the client</p>
+          <p>hello@rikaburgerng.com</p>
+          <p>+234 800 000 0000</p>
         </div>
         <div className="footer-section social">
           <h4>Follow Us</h4>
           <div className="social-icons">
             <a href="https://facebook.com/rikaburgerng" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><FaFacebook /></a>
             <a href="https://instagram.com/rikaburgerng" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><FaInstagram /></a>
-            <a href="https://twitter.com/rikaburgerng" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><FaTwitter /></a>
+            <a href="https://x.com/rikaburgerng" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X"><FaTwitter /></a>
           </div>
         </div>
       </Container>
