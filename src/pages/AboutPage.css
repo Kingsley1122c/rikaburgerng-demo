@@ -1,0 +1,87 @@
+.about-page {
+  background: linear-gradient(180deg, #fff8f2 0%, #ffffff 100%);
+}
+
+.about-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-md);
+}
+
+.about-card {
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  background: var(--white-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.values-grid,
+.team-grid,
+.photos-grid,
+.awards-grid,
+.timeline-grid,
+.about-stats-grid {
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-card,
+.value-card,
+.photo-card,
+.award-card,
+.timeline-card,
+.about-stat-card {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  background: var(--white-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.team-card img,
+.photo-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.team-content,
+.value-card,
+.award-card,
+.timeline-card,
+.about-stat-card {
+  padding: var(--spacing-md);
+}
+
+.timeline-card strong,
+.about-stat-card strong {
+  color: var(--primary-color);
+  font-size: 28px;
+}
+
+@media (max-width: 1024px) {
+  .values-grid,
+  .team-grid,
+  .photos-grid,
+  .awards-grid,
+  .timeline-grid,
+  .about-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid,
+  .values-grid,
+  .team-grid,
+  .photos-grid,
+  .awards-grid,
+  .timeline-grid,
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,179 @@
+.menu-page {
+  background: linear-gradient(180deg, #ffffff 0%, #fff8f2 100%);
+}
+
+.menu-page-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.menu-controls {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  background: var(--white-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.menu-search,
+.menu-sort {
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius-md);
+  padding: 12px;
+  font: inherit;
+}
+
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.category-pills button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.category-pills button.active {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-md);
+}
+
+.menu-card {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  background: var(--white-color);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menu-card-body {
+  padding: var(--spacing-md);
+  display: grid;
+  gap: 12px;
+}
+
+.menu-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #5b5b5b;
+  font-size: 14px;
+}
+
+.menu-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.menu-tag {
+  background: #f7f7f7;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.menu-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.menu-price {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.menu-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.quick-view-btn {
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #505050;
+}
+
+.menu-empty {
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  background: var(--white-color);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.quick-modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.quick-modal img {
+  width: 100%;
+  border-radius: var(--border-radius-md);
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.related-meals {
+  margin-top: var(--spacing-lg);
+}
+
+.related-meals ul {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.related-meals li {
+  display: flex;
+  justify-content: space-between;
+  color: #4e4e4e;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menu-controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-modal {
+    grid-template-columns: 1fr;
+  }
+}

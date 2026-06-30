@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="RikaburgerNG favicon">
+  <rect width="64" height="64" rx="14" fill="#121620"/>
+  <ellipse cx="32" cy="24" rx="18" ry="8" fill="#ff9f45"/>
+  <rect x="14" y="28" width="36" height="5" rx="2.5" fill="#f7d154"/>
+  <rect x="14" y="34" width="36" height="6" rx="3" fill="#4fbf73"/>
+  <rect x="13" y="40" width="38" height="7" rx="3.5" fill="#f07a2b"/>
+  <ellipse cx="32" cy="49" rx="18" ry="7" fill="#ffd08a"/>
+  <path d="M26 22h2v2h-2zm5-1h2v2h-2zm5 2h2v2h-2z" fill="#fff2c6"/>
+</svg>

@@ -1,0 +1,87 @@
+.meal-card {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.meal-card-image-container {
+    background-color: var(--light-gray-color);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.meal-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meal-card-image-placeholder {
+    font-size: 80px;
+    color: var(--primary-color);
+    opacity: 0.3;
+    position: absolute;
+}
+
+.meal-card-content {
+    padding: var(--spacing-md);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-card-name {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary-color);
+}
+
+.meal-card-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: var(--spacing-md);
+}
+
+.meal-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.meal-card-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.add-to-cart-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e65c00; /* Darker shade of primary */
+    transform: scale(1.1);
+}

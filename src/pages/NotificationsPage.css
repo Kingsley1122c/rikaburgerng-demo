@@ -1,0 +1,54 @@
+.notifications-page {
+  background: linear-gradient(180deg, #ffffff 0%, #fff8f2 100%);
+}
+
+.notifications-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.notifications-panel {
+  background: var(--white-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  gap: var(--spacing-sm);
+}
+
+.notifications-list {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.notification-card {
+  border: 1px solid #ececec;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.notification-card.unread {
+  border-color: #ffd4b3;
+  background: #fffaf7;
+}
+
+.notification-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.notification-actions button {
+  border: none;
+  background: #f2f2f2;
+  border-radius: var(--border-radius-sm);
+  padding: 6px 10px;
+  cursor: pointer;
+}

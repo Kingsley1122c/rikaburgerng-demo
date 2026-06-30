@@ -1,0 +1,37 @@
+import { lazy } from 'react';
+
+export const HomePage = lazy(() => import('../pages/HomePage'));
+export const MenuPage = lazy(() => import('../pages/MenuPage'));
+export const GalleryPage = lazy(() => import('../pages/GalleryPage'));
+export const AboutPage = lazy(() => import('../pages/AboutPage'));
+export const ContactPage = lazy(() => import('../pages/ContactPage'));
+export const CartPage = lazy(() => import('../pages/CartPage'));
+export const CheckoutPage = lazy(() => import('../pages/CheckoutPage'));
+export const OrderTrackingPage = lazy(() => import('../pages/OrderTrackingPage'));
+export const WishlistPage = lazy(() => import('../pages/WishlistPage'));
+export const AccountPage = lazy(() => import('../pages/AccountPage'));
+export const NotificationsPage = lazy(() => import('../pages/NotificationsPage'));
+export const SettingsPage = lazy(() => import('../pages/SettingsPage'));
+export const LoginPage = lazy(() => import('../pages/LoginPage'));
+export const RegisterPage = lazy(() => import('../pages/RegisterPage'));
+export const ForgotPasswordPage = lazy(() => import('../pages/ForgotPasswordPage'));
+export const ResetPasswordPage = lazy(() => import('../pages/ResetPasswordPage'));
+export const UnauthorizedPage = lazy(() => import('../pages/UnauthorizedPage'));
+export const FaqPage = lazy(() => import('../pages/FaqPage'));
+export const PrivacyPolicyPage = lazy(() => import('../pages/PrivacyPolicyPage'));
+export const TermsOfServicePage = lazy(() => import('../pages/TermsOfServicePage'));
+export const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
+
+export const AdminLoginPage = lazy(() => import('../admin/pages/AdminLoginPage'));
+export const AdminDashboardPage = lazy(() => import('../admin/pages/AdminDashboardPage'));
+export const AdminOrdersPage = lazy(() => import('../admin/pages/AdminOrdersPage'));
+export const AdminMenuPage = lazy(() => import('../admin/pages/AdminMenuPage'));
+export const AdminCategoriesPage = lazy(() => import('../admin/pages/AdminCategoriesPage'));
+export const AdminCustomersPage = lazy(() => import('../admin/pages/AdminCustomersPage'));
+export const AdminReviewsPage = lazy(() => import('../admin/pages/AdminReviewsPage'));
+export const AdminInventoryPage = lazy(() => import('../admin/pages/AdminInventoryPage'));
+export const AdminCouponsPage = lazy(() => import('../admin/pages/AdminCouponsPage'));
+export const AdminAnalyticsPage = lazy(() => import('../admin/pages/AdminAnalyticsPage'));
+export const AdminMessagesPage = lazy(() => import('../admin/pages/AdminMessagesPage'));
+export const AdminStaffPage = lazy(() => import('../admin/pages/AdminStaffPage'));
+export const AdminSettingsPage = lazy(() => import('../admin/pages/AdminSettingsPage'));

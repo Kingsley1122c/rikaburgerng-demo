@@ -1,0 +1,8 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F7F7F7"/>
+  <circle cx="400" cy="300" r="180" fill="#FFD699"/>
+  <path d="M250 285C250 240 286 204 331 204H469C514 204 550 240 550 285V295H250V285Z" fill="#FF6B00"/>
+  <rect x="260" y="310" width="280" height="58" rx="29" fill="#8D5524"/>
+  <rect x="245" y="378" width="310" height="26" rx="13" fill="#FF6B00"/>
+  <text x="400" y="488" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A1A">RikaburgerNG</text>
+</svg>
