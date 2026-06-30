@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import MainLayout from './layouts/MainLayout';
 import AdminLayout from './admin/components/AdminLayout';
@@ -13,7 +13,17 @@ import { useScrollToTop } from './hooks/useScrollToTop';
 
 function App() {
   const location = useLocation();
+  const navigate = useNavigate();
   useScrollToTop();
+
+  React.useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const redirect = params.get('redirect');
+
+    if (redirect && redirect.startsWith('/')) {
+      navigate(redirect, { replace: true });
+    }
+  }, [location.search, navigate]);
 
   return (
     <React.Suspense fallback={<Loader label="Loading page" />}>
